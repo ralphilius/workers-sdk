@@ -58,10 +58,6 @@ export function buildWorker({
 			watch,
 			legacyNodeCompat,
 			nodejsCompat,
-			loader: {
-				".txt": "text",
-				".html": "text",
-			},
 			define: {
 				__FALLBACK_SERVICE__: JSON.stringify(fallbackService),
 			},
@@ -210,10 +206,6 @@ export function buildRawWorker({
 			watch,
 			legacyNodeCompat,
 			nodejsCompat,
-			loader: {
-				".txt": "text",
-				".html": "text",
-			},
 			define: {},
 			betaD1Shims: (betaD1Shims || []).map(
 				(binding) => `${D1_BETA_PREFIX}${binding}`
